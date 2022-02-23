@@ -12,6 +12,8 @@ spec:
       tier: frontend
   template:
     metadata:
+      labels:
+        tier: frontend
     spec:
       containers:
       - name: app1
