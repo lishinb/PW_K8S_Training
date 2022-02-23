@@ -19,5 +19,4 @@ spec:
     hostPath:
       # directory location on host
       path: /tmp/files
-      # this field is optional
-      type: Directory
+
