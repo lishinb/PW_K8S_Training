@@ -1,0 +1,21 @@
+metadata:
+  name: pod-vol-demo
+spec:
+  containers:
+  - name: app1
+    image: supergiantkir/animals:bear
+    volumeMounts:
+    - name: app-storage
+      mountPath: /storage
+  - name: app2
+    image: yanivomc/spring-music:latest
+    volumeMounts:
+    - name: app-storage
+      mountPath: /storage
+  nodeSelector:
+    env: prod
+  volumes:
+  - name: app-storage
+    hostPath:
+      # directory location on host
+      path: /tmp/files
