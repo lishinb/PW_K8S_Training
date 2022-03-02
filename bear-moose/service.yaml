@@ -1,0 +1,13 @@
+kind: Service      # Create new service
+apiVersion: v1     
+metadata:
+  name: bear-moose-service # Name of the service
+spec:
+  selector:
+    app: animals    
+  ports:          
+  - name: http    
+    protocol: TCP
+    port: 80
+    targetPort: 8080
+  type: LoadBalancer
