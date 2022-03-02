@@ -21,6 +21,4 @@ spec:
       - name: moose
         image: supergiantkir/animals:moose
         ports:
-        - htpp-port
-          port: 80
-          targetPort: 8080
+        - containerPort: 80
