@@ -10,7 +10,7 @@ spec:
       maxUnavailable: 1
   selector:
     matchLabels:
-      app: nginx
+      app: y-spring-music
   replicas: 2 # tells deployment to run 2 pods matching the template using the ReplicaSet
   template: # create pods using pod definition in this template
     metadata:
