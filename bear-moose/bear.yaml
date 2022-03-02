@@ -21,6 +21,4 @@ spec:
       - name: bear
         image: supergiantkir/animals:bear
         ports:
-        - htpp-port
-          port: 80
-          targetPort: 8080
+        - containerPort: 80
