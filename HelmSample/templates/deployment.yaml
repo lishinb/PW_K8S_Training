@@ -19,7 +19,7 @@ spec:
        ports:
        - containerPort:  {{.Values.cont_port}}
        env:
-        - name: SPECIAL_LEVEL_KEY
+        - name: mydbname
           valueFrom:
             configMapKeyRef:
               name: {{.Release.Name}}-configmap
