@@ -1,0 +1,5 @@
+containers:
+  repo : yanivomc
+  image : spring-music
+  tag : latest
+cont_port : 8080
